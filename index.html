@@ -2,6 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Corny</title>
   </head>
@@ -15,24 +19,21 @@
           <p>Küzdelem, életre-halálra.</p>
         </div>
       </div>
-      <a href="#focim"
+      <a id="tovabb" href="#focim"
         ><div class="kezdo-csik" id="kezdo-csik-link"><h1>Tovább</h1></div></a
       >
     </div>
-    <!-- <div class="kezdo-csik"><h1>Odatettem.</h1></div> -->
 
-    <div class="fo">
-      <h1 id="focim">dgcorny.</h1>
-      <h2>Híreink</h2>
-
-      <div class="hirek">
-        <div class="kartya">
-          <img
-            src="https://www.planetware.com/wpimages/2020/02/greece-in-pictures-beautfiul-places-to-photograph-santorini-oia.jpg"
-          />
-
-          <div class="kartya-content">
-            <h2>2021-ben is lesz vetélkedő</h2>
+    <div class="page szurke">
+      <div class="page-content">
+        <h1 id="cim">hírek</h1>
+        <div class="hirek">
+          <div class="hirek-kartya">
+            <img
+              id="hirek-kep"
+              src="https://www.planetware.com/wpimages/2020/02/greece-in-pictures-beautfiul-places-to-photograph-santorini-oia.jpg"
+            />
+            <h1>2021-ben is lesz vetélkedő</h1>
             <p>
               A legtöbb híres ételhez hasonlóan az arancino, vagyis a töltött,
               panírozott rizsgolyó (vagy - kúp) esetében sincs valódi történelmi
@@ -44,14 +45,13 @@
               nem egy ételt jelentett, hanem azt, hogy narancsszínű.
             </p>
           </div>
-        </div>
 
-        <div class="kartya">
-          <img
-            src="https://santorinidave.com/wp-content/uploads/2018/05/greece-travel-greek-islands.jpg"
-          />
-          <div class="kartya-content">
-            <h2>Közlekedés a versenyzőknek</h2>
+          <div class="hirek-kartya">
+            <img
+              id="hirek-kep"
+              src="https://santorinidave.com/wp-content/uploads/2018/05/greece-travel-greek-islands.jpg"
+            />
+            <h1>Közlekedés a versenyzőknek</h1>
             <p>
               A siklóberuházás régóta szerepel a budapesti tervek között, de az
               elmúlt években mindig magántőkéből akarták megvalósítani. Fürjes
@@ -63,13 +63,13 @@
               átfogó felújításával.
             </p>
           </div>
-        </div>
-        <div class="kartya">
-          <img
-            src="https://assets.kpmg/content/dam/kpmg/xx/images/2019/05/white-buildings-near-blue-water-oia-santorini-greece.jpg/jcr:content/renditions/cq5dam.web.512.341.jpg"
-          />
-          <div class="kartya-content">
-            <h2>Nem lesz foci!</h2>
+
+          <div class="hirek-kartya">
+            <img
+              id="hirek-kep"
+              src="https://assets.kpmg/content/dam/kpmg/xx/images/2019/05/white-buildings-near-blue-water-oia-santorini-greece.jpg/jcr:content/renditions/cq5dam.web.512.341.jpg"
+            />
+            <h1>Nem lesz foci!</h1>
             <p>
               A címvédő fővárosi klub honlapjának csütörtöki beszámolója szerint
               a találkozó új kezdési időpontját a magyar szövetség (MLSZ)
@@ -83,93 +83,111 @@
             </p>
           </div>
         </div>
+
+        <span id="hidden">Szoveg hogy kijojjon az 1:1:1 arany:(</span>
       </div>
+    </div>
 
-      <h2>Vetélkedő</h2>
-      <p>
-        Az első ókori olümpiai játékokat (görögül: Ολυμπιακοί Αγώνες [olimpiákoj
-        agónész] (segítség·infó)) i. e. 776-ban tartották a görögországi
-        Olümpiában, és egészen i. sz. 393-ig rendezték meg, de ekkor Nagy
-        Theodosius császár a kereszténység végleges megszilárdítása érdekében
-        minden pogány rendezvényt betiltott, így az olümpiai játékokat is
-        beszüntette – közel 11 évszázados fényes múlt után.[5] Az olimpiai
-        játékok felélesztésének a gondolata Panajótisz Szúcosz görög költő és
-        újságíró fejében fordult meg először 1833-ban, amit a „Halottak
-        párbeszéde” című versében is megfogalmazott. Az első újkori, olimpiára
-        emlékeztető rendezvény Evangélisz Zápasz anyagi támogatásával 1859-ben
-        jött létre. Ő állta a Pánhellén Stadion felújítási költségeit is, és ott
-        rendezték meg a hasonló 1870-es és 1875-ös játékokat is. Ezt szerte a
-        világon újságokban és közleményekben tudatták az emberekkel, a London
-        Review például azt írta, hogy „az olümpiai játékok, melyeket
-        évszázadokra abbahagytak, ismételten elkezdődtek! Valóban meglepő hír…,
-        hogy a klasszikus ókori játékokat Athén mellett újra felébresztették.”
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget
-        pulvinar nulla. Nulla ultricies vehicula lacus, ut auctor libero congue
-        quis. Phasellus molestie nunc massa, ac scelerisque nisi volutpat sed.
-        Quisque urna nulla, posuere vitae lacus eu, porttitor convallis libero.
-        Etiam malesuada est quis quam suscipit, et pellentesque libero
-        malesuada. Nam consequat, turpis feugiat consequat gravida, magna felis
-        suscipit elit, eget varius ligula risus nec risus.
-      </p>
-      <h2>Rólunk</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget
-        pulvinar nulla. Nulla ultricies vehicula lacus, ut auctor libero congue
-        quis. Phasellus molestie nunc massa, ac scelerisque nisi volutpat sed.
-        Quisque urna nulla, posuere vitae lacus eu, porttitor convallis libero.
-        Etiam malesuada est quis quam suscipit, et pellentesque libero
-        malesuada. Nam consequat, turpis feugiat consequat gravida, magna felis
-        suscipit elit, eget varius ligula risus nec risus.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget
-        pulvinar nulla. Nulla ultricies vehicula lacus, ut auctor libero congue
-        quis. Phasellus molestie nunc massa, ac scelerisque nisi volutpat sed.
-        Quisque urna nulla, posuere vitae lacus eu, porttitor convallis libero.
-        Etiam malesuada est quis quam suscipit, et pellentesque libero
-        malesuada. Nam consequat, turpis feugiat consequat gravida, magna felis
-        suscipit elit, eget varius ligula risus nec risus.
-      </p>
-
-      <h2>Média, sajtó</h2>
-      <h3>Sajtó</h3>
-      <p>
-        Megkereséseiket a <span id="email">zambojimmykiraly@gmail.com</span>-on
-        és a <span id="email">zeuscorny@gmail.com</span>
-        email címeken várjuk.
-      </p>
-      <h3>A vetélkedő hivatalos dala</h3>
-
-      <iframe
-        src="https://www.youtube.com/embed/sZL0Cvo_ngo"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-
-      <h2>Szponzoraink</h2>
-      <div class="szponzor">
-        <div class="szponzor-kartya">
-          <img src="img/arpi.jpg" />
-          <h2>Zámbó Árpy szendvicsezője</h2>
+    <div class="page-feles turkiz">
+      <div class="page-content">
+        <h1 id="cim">vetélkedő, rólunk</h1>
+        <div class="osztott-container">
+          <div class="osztott">
+            <p>
+              Az első ókori olümpiai játékokat (görögül: Ολυμπιακοί Αγώνες
+              [olimpiákoj agónész] (segítség·infó)) i. e. 776-ban tartották a
+              görögországi Olümpiában, és egészen i. sz. 393-ig rendezték meg,
+              de ekkor Nagy Theodosius császár a kereszténység végleges
+              megszilárdítása érdekében minden pogány rendezvényt betiltott, így
+              az olümpiai játékokat is beszüntette – közel 11 évszázados fényes
+              múlt után.[5] Az olimpiai játékok felélesztésének a gondolata
+              Panajótisz Szúcosz görög költő és újságíró fejében fordult meg
+              először 1833-ban, amit a „Halottak párbeszéde” című versében is
+              megfogalmazott. Az első újkori, olimpiára emlékeztető rendezvény
+              Evangélisz Zápasz anyagi támogatásával 1859-ben jött létre.
+            </p>
+          </div>
+          <div class="osztott">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              eget pulvinar nulla. Nulla ultricies vehicula lacus, ut auctor
+              libero congue quis. Phasellus molestie nunc massa, ac scelerisque
+              nisi volutpat sed. Quisque urna nulla, posuere vitae lacus eu,
+              porttitor convallis libero. Etiam malesuada est quis quam
+              suscipit, et pellentesque libero malesuada. Nam consequat, turpis
+              feugiat consequat gravida, magna felis suscipit elit, eget varius
+              ligula risus nec risus.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              eget pulvinar nulla. Nulla ultricies vehicula lacus, ut auctor
+              libero congue quis. Phasellus molestie
+            </p>
+          </div>
         </div>
+        <span id="hidden">Szoveg hogy kijojjon az 1:1:1 arany:(</span>
+      </div>
+    </div>
 
-        <div class="szponzor-kartya">
-            <img src="img/zeus.jpg" />
-            <h2>Zeusz, saját maga</h2>
+    <div class="page-feles szurke">
+      <div class="page-content">
+        <h1 id="cim">média</h1>
+        <div class="osztott-container">
+          <div class="osztott">
+            <!--<img src="img/zamboj.jpg" width="100%" />-->
+            <iframe
+              width="100%"
+              height="300px"
+              src="https://www.youtube.com/embed/Ov2SeblOgts"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
 
+          <div class="osztott">
+            <p id="mediaszoveg">
+              sajtó megkereséseiket a <br /><span id="email1"
+                >zambojimmykiraly@gmail.com</span
+              >-on<br />és a
+              <span id="email2">zeuscorny@gmail.com</span> email<br />címeken
+              várjuk.
+              <br />
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-youtube"></i>
+            </p>
+          </div>
+        </div>
+        <span id="hidden">Szoveg hogy kijojjon az 1:1:1 arany:(</span>
+      </div>
+    </div>
+
+    <div class="page-feles turkiz">
+      <div class="page-content">
+        <h1 id="cim">szponzoraink</h1>
+        <div class="szponzor">
+          <div class="szponzor-kartya">
+            <img src="img/arpi.jpg" />
+            <h2>Arpi</h2>
+          </div>
 
           <div class="szponzor-kartya">
             <img src="img/kukorica.jpg" />
             <h2>Kukor Ica</h2>
           </div>
+
+          <div class="szponzor-kartya">
+            <img src="img/zeus.jpg" />
+            <h2>Zeus</h2>
+          </div>
+        </div>
+        <span></span>
       </div>
     </div>
-    <div class="kezdo-csik">
-      <h2>Dániel Miklós - Schdesign felvételi 2020</h2>
+
+    <div class="page-footer">
+      <h1>Dániel Miklós - Schdesign felvételi</h1>
     </div>
   </body>
 </html>

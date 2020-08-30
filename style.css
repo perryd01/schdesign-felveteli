@@ -1,14 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+@import url("fonts/Roboto-Regular.ttf");
+
+:root {
+  --kartya-szin: #363636;
+  --sotet-turkiz: #253b41;
+  --sarga: #fcc21b;
+  --sarga-sotet: #e0a800;
+  --feher: #fff;
+  --rozsaszin: #e94967;
+  --para-szin: #e2e2e2;
+  --hatter-szurke: #222222;
+}
+
 html {
   scroll-behavior: smooth;
 }
-body {
-  height: 100%;
-  font-family: "Roboto", sans-serif;
-}
 
 body {
-  background-color: #222222;
+  width: 100%;
+  height: auto;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--hatter-szurke);
   margin: 0;
   padding: 0;
   min-width: 400px;
@@ -22,7 +33,7 @@ body {
 .kezdo {
   width: 100%;
   height: 90%;
-  color: white;
+  color: var(--feher);
   margin: auto;
   display: flex;
   align-items: center;
@@ -40,17 +51,24 @@ body {
 }
 
 .kezdo-kozep h1 {
-  letter-spacing: 0.15em;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  font-size: 2.6em;
+}
+
+.kezdo-kozep p {
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
+  font-weight: lighter;
 }
 
 .kezdo-csik {
   height: 10%;
-  background-color: #fcc21b;
+  background-color: var(--sarga);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #222222;
-
+  color: var(--hatter-szurke);
   text-decoration: none;
 }
 
@@ -62,149 +80,183 @@ body {
 }
 
 #kezdo-csik-link:hover {
-  background-color: #e0a800;
+  background-color: var(--sarga-sotet);
 }
 
 .szurke {
-  background-color: #222222;
+  background-color: var(--hatter-szurke);
+  color: var(--feher);
 }
 
-.fo {
+.turkiz {
+  background-color: var(--sotet-turkiz);
+  color: var(--feher);
+}
+.page-feles {
+  min-height: 75%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-content {
   width: 80%;
+  max-width: 1200px;
+  min-height: 80%;
   height: auto;
   margin: auto;
-  color: white;
-  min-height: 89%;
-  max-width: 1000px;
-  padding-top: 2em;
-  padding-bottom: 3em;
-}
-
-.fo p {
-  text-align: justify;
-  font-weight: lighter;
-}
-
-.hirek {
-  width: 100%;
-  height: auto;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.kartya {
-  width: 30%;
-  height: 40em;
-  position: relative;
-  background-color: rgb(58, 58, 58);
-}
-
-.kartya-content {
-  padding: 1em;
-}
-
-.kartya-szoveg {
-  position: absolute;
-  top: 0;
-  left: 0;
+.page {
   width: 100%;
   height: auto;
-  z-index: 10;
-  background-color: rgba(0, 0, 0, 0.6);
-  font-size: 1em;
-  text-align: center;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.kartya img {
-  filter: brightness(0.8);
+.page-footer {
+  height: 15%;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-#email {
-  color: #fcc21b;
-  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sarga);
 }
 
 .szponzor {
-  width: 100%;
-  height: auto;
   display: flex;
+  flex-direction: row;
+  width: 100%;
   justify-content: space-between;
 }
 .szponzor-kartya {
-  padding: 1em;
   width: 25%;
   height: auto;
-  background-color: rgb(58, 58, 58);
   text-align: center;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #222222;
 }
 
 .szponzor-kartya img {
   width: 100%;
-  height: 20em;
+  height: 80%;
   object-fit: cover;
-  transition: 1s;
+  /*border-radius: 50%;*/
+  text-align: center;
 }
 
-.szponzor-kartya img:hover {
-  filter: saturate(1.5);
-  transition: 0.4s;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-/* https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
-
-iframe {
+.osztott-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  height: 56%;
 }
 
-@keyframes sargachange {
-  from {
-    background-color: #fcc21b;
-  }
-  to {
-    background-color: #e0a800;
-  }
+.osztott {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: justify;
+}
+
+#mediaszoveg {
+  text-align: right;
+  font-size: 1.4em;
+}
+
+#cim {
+  width: 100%;
+  text-align: left;
+  color: var(--sarga);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  font-size: 2.2em;
+}
+#email1 {
+  color: var(--sarga);
+}
+#email2 {
+  color: var(--rozsaszin);
+}
+
+#hidden {
+  visibility: hidden;
+}
+
+.fa {
+  font-size: 3em;
+  color: var(--sarga);
+}
+
+.bal {
+  text-align: left;
+}
+.jobb {
+  text-align: right;
+}
+
+.hirek {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hirek-kartya {
+  width: 30%;
+  height: auto;
+  min-height: 30em;
+  background-color: var(--kartya-szin);
+}
+
+.hirek-kartya p {
+  font-size: 0.7em;
+  text-align: justify;
+  margin: 1em;
+  color: var(--para-szin);
+}
+
+#hirek-kep {
+  width: 100%;
+  height: 15em;
+  object-fit: cover;
 }
 
 @media (orientation: portrait) {
-  .kartya {
-    width: 100%;
-    height: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-  .hirek {
+  .hirek{
     flex-direction: column;
+    width: 100%;
+  }
+  .hirek-kartya {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-height: unset;
+  }
+  .osztott-container {
+    flex-direction: column;
+  }
+  .osztott {
+    width: 100%;
   }
   .szponzor {
     flex-direction: column;
   }
-  .szponzor-kartya {
+  .szponzor-kartya{
     width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
-  .szponzor-kartya img {
-    width: 60%;
-  }
-
-  iframe {
-    width: 100%;
-    height: 30%;
-  }
-
 }

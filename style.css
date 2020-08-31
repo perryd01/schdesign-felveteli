@@ -222,7 +222,7 @@ body {
 }
 
 .hirek-kartya p {
-  font-size: 0.7em;
+  font-size: 0.9em;
   text-align: justify;
   margin: 1em;
   color: var(--para-szin);
@@ -232,6 +232,10 @@ body {
   width: 100%;
   height: 15em;
   object-fit: cover;
+}
+
+#tovabb{
+  text-decoration: none;
 }
 
 @media (orientation: portrait) {
